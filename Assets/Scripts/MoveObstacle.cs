@@ -17,5 +17,15 @@ public class MoveObstacle : MonoBehaviour
     void Update()
     { 
         rb.transform.position = Vector3.MoveTowards(rb.transform.position, pos, 2f * Time.deltaTime);
+
+        if (Vector3.Distance(rb.transform.position, pos) < 0.1f)
+        {
+            ChooseNewPoint();
+        }
+    }
+
+    void ChooseNewPoint()
+    {
+        pos = new Vector3(Random.Range(-10f, 10f), Random.Range(-10f, 10f), -2);
     }
 }

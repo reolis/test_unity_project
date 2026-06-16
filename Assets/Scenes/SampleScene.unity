@@ -501,7 +501,7 @@ Transform:
   m_GameObject: {fileID: 867449524}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.54, y: -2.87, z: -2}
+  m_LocalPosition: {x: -6.65, y: -2.96, z: -2}
   m_LocalScale: {x: 0.7143, y: 0.7212, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -531,6 +531,7 @@ GameObject:
   - component: {fileID: 1376888643}
   - component: {fileID: 1376888642}
   - component: {fileID: 1376888644}
+  - component: {fileID: 1376888645}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -626,6 +627,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   cactus1: {fileID: 7883923230892665657, guid: 5c0f4caea5dc0ad409a6f856c0317f2b, type: 3}
   cactus2: {fileID: 4799242744976433084, guid: b0be4c5a73da5a84a875cd9131449d35, type: 3}
+--- !u!114 &1376888645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376888641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09593940334038148ab1a8cf551635b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  coin: {fileID: 5748125360167203174, guid: 5cb2f3ecf8942524abb2af1c9fa460c5, type: 3}
+  coins:
+  - {fileID: 5748125360167203174, guid: 5cb2f3ecf8942524abb2af1c9fa460c5, type: 3}
+  - {fileID: 5748125360167203174, guid: 5cb2f3ecf8942524abb2af1c9fa460c5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
