@@ -1,0 +1,21 @@
+using UnityEngine;
+
+public class MoveObstacle : MonoBehaviour
+{
+    public GameObject obstacle;
+    Rigidbody2D rb;
+    Vector3 pos;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        pos = new Vector3(Random.Range(-10f, 10f), Random.Range(-10f, 10f), -2);
+    }
+
+    // Update is called once per frame
+    void Update()
+    { 
+        rb.transform.position = Vector3.MoveTowards(rb.transform.position, pos, 2f * Time.deltaTime);
+    }
+}
